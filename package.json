@@ -1,0 +1,43 @@
+{
+  "name": "mask-container",
+  "version": "1.0.1",
+  "description": "a container with a masker layer ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf lib && mkdir lib",
+    "build": "npm run clean && gulp sass && babel src --out-dir lib --copy-files",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuobuer/mask-container.git"
+  },
+  "keywords": [
+    "mask",
+    "container"
+  ],
+  "author": "zuobuer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zuobuer/mask-container/issues"
+  },
+  "homepage": "https://github.com/zuobuer/mask-container#readme",
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bable-loader": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
